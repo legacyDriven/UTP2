@@ -44,7 +44,7 @@ public class Main {
       };
 
       Function <String, List<Integer>> collectInts = string ->
-              Arrays.stream(string .replaceAll("\\D", " ")
+              Arrays.stream(string.replaceAll("\\D", " ")
                               .replaceAll(" +", " ")
                               .split(" "))
                       .filter(n-> n.length()>0)
@@ -61,8 +61,6 @@ public class Main {
     List<String> lines = fileConv.convertBy(flines);
     String text = fileConv.convertBy(flines, join);
     List<Integer> ints = fileConv.convertBy(flines, join, collectInts);
-    System.out.println("tu");
-    System.out.println(ints);
     Integer sumints = fileConv.convertBy(flines, join, collectInts, sum);
 
     System.out.println(lines); //1

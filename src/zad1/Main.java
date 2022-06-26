@@ -9,10 +9,8 @@ package zad1;
 
 /*<-- niezbędne importy */
 
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
-import java.util.concurrent.CopyOnWriteArrayList;
 import java.util.stream.Collectors;
 
 public class Main {
@@ -31,7 +29,7 @@ public class Main {
             .filter(x -> x.startsWith("WAW"))
             .map(x-> {
               String [] temp = x.split(" ");
-              return "to " + temp[1] + " price in PLN: " + (int) (Integer.parseInt(temp[2]) * ratePLNvsEUR);})
+              return "to " + temp[1] + " -  price in PLN: " + (int) (Integer.parseInt(temp[2]) * ratePLNvsEUR);})
             .collect(Collectors.toList());
     /*<-- tu należy dopisać fragment
      * przy czym nie wolno używać żadnych własnych klas, jak np. ListCreator

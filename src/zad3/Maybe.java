@@ -25,9 +25,7 @@ class Maybe <T> {
         return new Maybe<>(argument);
     }
 
-    public void ifPresent(Consumer <T>  cons){
-        if(!isEmpty()) cons.accept(value);
-    }
+    public void ifPresent(Consumer <T>  cons){ if(!isEmpty()) cons.accept(value); }
 
 //    public <U> Maybe <U> map(Function <T,U> function){
 //        return new Maybe<>(function.apply(value));

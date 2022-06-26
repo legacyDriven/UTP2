@@ -53,7 +53,7 @@ public class Main {
     //MOŻNA NAPISAĆ
     String res = Maybe.of(num).map(n -> "Wartość wynosi: "+n)
                       .orElse("Wartość niedostępna");
-   // System.out.println(res);
+    System.out.println(res);
 
     // I filter(...)
 
