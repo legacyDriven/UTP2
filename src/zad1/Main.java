@@ -29,7 +29,7 @@ public class Main {
             .filter(x -> x.startsWith("WAW"))
             .map(x-> {
               String [] temp = x.split(" ");
-              return "to " + temp[1] + " -  price in PLN: " + (int) (Integer.parseInt(temp[2]) * ratePLNvsEUR);})
+              return "to " + temp[1] + " - price in PLN:  " + (int) (Integer.parseInt(temp[2]) * ratePLNvsEUR);})
             .collect(Collectors.toList());
     /*<-- tu należy dopisać fragment
      * przy czym nie wolno używać żadnych własnych klas, jak np. ListCreator
@@ -44,6 +44,7 @@ public class Main {
 to HAV - price in PLN:	5160
 to DPS - price in PLN:	8600
 to HKT - price in PLN:	4300
+
 dest.stream()
             .filter(x -> x.startsWith("WAW"))
             .map(x-> {
